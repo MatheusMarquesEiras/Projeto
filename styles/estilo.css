@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Source+Serif+Pro&display=swap');
+
+:root{
+    --fonte-titulos: 'Mukta', sans-serif;
+    --fonte-paragrafos: 'Source Serif Pro', serif;
+
+    --cor-fundo: #142850;
+    --cor-cabecalho: #00A8CC;
+    --cor-rodape: #0C7B93;
+    --cor-diversos: #27496D;
+    --cor-fonte: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pagina{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%; 
+}
+
+.cabecalho__logo{
+    width: 5%;
+    border-radius: 64px;
+}
+
+.cabecalho__nav{
+    display: flex;
+    gap: 30px;
+
+}
+
+.cabecalho__nav__link{
+    padding: 20px 30px 20px 30px;
+    border: 3px solid var(--cor-diversos);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-paragrafos);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.conteudo{
+    flex-grow: 1;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+    padding: 1% 5% 2% 5%;
+}
+
+.conteudo__sessao{
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.conteudo__sessao__titulo{
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo__sessao__titulo__destaque{
+    color: #00A8CC;
+}
+
+.conteudo__sessao__paragrafo{
+    font-size: var(--fonte-paragrafos);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.conteudo__sessao__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.conteudo__sessao__div__link{
+    width: 5rem;
+}
+
+.conteudo__imagem{
+    padding: 1% 5% 1% 5%;
+    width: 300px;
+    padding: 0;
+    margin: 2% 0;
+}
+
+.rodape{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--cor-rodape);
+}
+
+.rodape__paragrafo{
+    color: var(--cor-fonte);
+    font-family: var(--fonte-paragrafos);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
